@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--Jackelin Britton-->
+<!--doctype html to specify the type of doc we are working on-->
+
+<html>
+    <script src="codeW4.js"></script>
+    <!-- the script tag src= to call our js doc (link it)-->
+    <link href="loginStyle.css" rel="stylesheet" type="text/css" />
+    <!-- link href to link/reference of a css page in order to give style to our page-->
+    <head>
+        <title>UAT Space Login</title>
+    </head>
+    <!--head tags to specify that this is the "main title"-->
+        
+
+    <body>
+        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: italic;">
+            Welcome to UAT Space
+        </h1>
+        <br>
+        <h1 style="color: palegreen;"><span> </span></h1>
+        <br>
+    <!--br tag means a separation between lines-->
+        <p style="color: tomato;"  id="loginStatus" class="texty">Status of login...</p>
+        <br>
+        <br>
+    <!--the <p> tag is to add some paragraph/text-->
+        <form style="padding-left: 100px; font-style: oblique;"  id="credSubmit" onsubmit="return false">
+            First Name:     <input type="text" id="fName" /> <br>
+            <br>
+            Last Name:      <input type="text" id="lName" /> <br>
+            <br>
+            Badge Number:   <input type="number" id="badgeID" /> <br>
+            <br>
+            <input type="submit" onclick="checkCreds();" />
+        </form>
+    </body>
+
+
+</html>
